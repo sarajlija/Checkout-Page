@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"content="width=device-width, initial-scale=1, maximum-scale=5"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Devchallenges</title>
+  </head>
+  <body>
+      <h1>Checkout</h1>
+    <div class="container">
+      <div class="container-form">
+        <form>
+            <h3>Concat information</h3>
+            <label for="email"><small>E-mail</small></label><br>
+            <div class="div">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" /></svg>
+            <input type="email"   class ="input-field" id="email" placeholder="Enter your email.." name="email" required>
+            </div>
+            <label for="tel"><small>Phone</small></label><br>
+            <div class="div">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+            <input type="tel" class="input-field" id="tel" placeholder="Enter your phone.." name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+            </div>
+              <h3>Shiping address</h3>
+              <label for="fname"><small>Full name</small></label><br>
+            <div class="div">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+              </svg>
+              <input type="text" id="fname" class ="input-field" name="fname" value=""><br>
+            </div>
+              <label for="fname"><small>Address</small></label><br>
+            <div class="div">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+              </svg>
+              <input type="text" id="address" class="input-field" name="address"  placeholder="Your address.." required><br>
+            </div>
+              <label for="fname"><small>City</small></label><br>
+            <div class="div">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M15 11V5l-3-3-3 3v2H3v14h18V11h-6zm-8 8H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5V9h2v2zm6 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V9h2v2zm0-4h-2V5h2v2zm6 12h-2v-2h2v2zm0-4h-2v-2h2v2z" />
+              </svg>
+              <input type="text" id="city" class="input-field" name="acity" placeholder="Your city.." required><br>
+            </div>
+              <label for="states"><small>Country</small></label>
+              <label  for="postal code"><small class="postal-code">Postal code</small></label>
+            <div class="div-flex">
+              <div class="div div-1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                  </svg>
+                <select id="states" class="input-field">
+                  <option value="Your states..">Your states</option>
+                  <option value="United States">United States</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Germany">Germany</option>
+                </select>
+              </div>
+              <div class="div div-2">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                  <path d="M-618-3000H782V600H-618zM0 0h24v24H0z" fill="none" />
+                  <path d="M20 6H10v6H8V4h6V0H6v6H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z" />
+                </svg>
+                <input type="text" class= "input-field code-field" id="postal code" name="postal code" pattern="[0-9]{5}"
+                  title="Three letter postal code" placeholder="Your postal code.." required>
+              </div>
+        </div>
+          <div class="div-checkbox">
+            <label class="costum-checkbox">Save this information for next time
+              <input id="checkbox" type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>      
+          </div>
+            <input id="submit" type="submit" value ="continue">
+        </form>
+      </div>
+    <aside>
+      <div class="aside-item">
+          <div class="item-up">
+            <img src="./image/photo1.png" alt="" class="img">
+            <div class="item-up-right">
+              <h3>Vintage Backbag</h3>
+                <span class="orange">$54.99</span>
+                <span><small>$94.99</small></span>
+                <p class="number-item"><span class="minus"> - </span ><span class="one"> 1 </span> <span class="plus"> + </span></p>
+            </div>
+          </div>
+          <div class="item-down">
+            <img src="./image/photo1.png" alt="" class="img">
+            <div class="item-up-right">
+              <h3>Levi Shoes</h3>
+              <span class="orange">$74.99</span>
+              <span ><small>$124.99</small></span>
+              <p class="number-item"><span class="minus"> - </span><span class="one"> 1 </span><span class="plus"> + </span></p>
+            </div>
+          </div>
+          <hr>
+          <div class="shipping">
+            <p class="">Shipping</p>
+            <p class="">$19</p>
+          </div>
+          <hr>
+          <div class="shipping">
+            <p>Total</p>
+            <p>$148.98</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+      <p class="devs-name">SalkoBidzevic@DevChallenges.io</p>
+  </body>
+</html>

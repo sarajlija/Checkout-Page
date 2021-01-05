@@ -1,0 +1,294 @@
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-align: start;
+    margin-left: 13.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+hr {
+    width: 90%;
+    
+}
+
+svg {
+    align-self: center;
+}
+
+#submit {
+    margin-left: 14rem;
+    margin-bottom: 3rem;
+    background-color:hsl(39, 88%, 53%);
+    padding: 6px 20px;
+    border-radius: 6px;
+    color:white;
+    border: none;
+}
+
+#states {
+    width: fit-content;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+.container-form {
+    order: 1;
+    display:flex;
+    padding-right: 5rem;
+   
+}
+.div {
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 6px;
+ 
+}
+
+.input-field {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+.div-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.div-1 {
+width: fit-content;
+  margin-right: 25px;
+}
+
+.div-2 {
+    width: fit-content;
+
+}
+.code-field {
+    width: fit-content;
+}
+
+.devs-name {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*ASIDE */
+
+aside {
+    order: 2;
+    background-color: rgb(221, 221, 221);
+    border-radius: 6px;
+    height: 35%;
+   
+}
+small {
+    margin-left:5px;
+}
+.item-up-right h3 {
+    margin-bottom: 8px;
+}
+
+.img {
+    width: auto;
+    height: 20vh;
+    padding: 15px;
+    border-radius: 1.5rem;
+}
+
+.item-up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.8rem;
+    
+}
+
+.orange {
+    color: hsl(39, 88%, 53%);
+    font-weight: 600;
+}
+.item-down {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 0.8rem;
+   
+}
+
+.number-item {
+    padding: 10px 15px;
+    border: 1px solid rgb(73, 70, 70);
+    margin-top: 25px;
+    text-align: center;
+    width: fit-content;
+    border-radius: 6px;
+    margin-right: 20px; 
+    margin-right: 20px;
+}
+ .minus {
+    padding: 2px 5px;
+    background-color: rgb(197, 194, 194);
+    border-radius: 5px;
+
+ }
+.one {
+    padding: 0 20px;
+}
+.plus {
+    padding: 2px 5px;
+    background-color: rgb(197, 194, 194);
+    border-radius: 5px;
+
+}
+
+.shipping {
+    display: flex;
+    justify-content: space-between;
+    margin:10px 25px;
+}
+.shipping p {
+    margin: 0 5px;
+}
+
+/*CHECKBOX*/
+
+.costum-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.costum-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 4px;
+    border:1px solid black;
+}
+
+/* On mouse-over, add a grey background color */
+.costum-checkbox:hover input ~ .checkmark {
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* When the checkbox is checked, add a blue background */
+.costum-checkbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+
+}
+
+/* Show the checkmark when checked */
+.costum-checkbox input:checked ~ .checkmark:after {
+   display: block;
+}
+
+/* Style the checkmark/indicator */
+.costum-checkbox .checkmark:after {
+    left: 5px;
+    top: 0px;
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+       margin-left: 4rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80vw;
+        margin: 0 auto;
+    }
+    
+    aside {
+        order:1;
+        background-color: rgb(221, 221, 221);
+        border-radius: 6px;
+        height: 60%;
+       
+    }
+    .container-form {
+        order: 2;
+        display:flex;
+        padding-right: 3rem;
+       
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        margin-left: 0;
+
+        }
+    .container {
+        margin: 0;
+        width: fit-content;
+
+    }
+
+    .container-form {
+        display:flex;
+        padding-right: 0rem;
+       
+    }
+
+    .devs-name {
+    margin: 0 auto;
+
+    }
+}
